@@ -1,0 +1,4 @@
+<h4><%= Vistor::IMAGE_LABELS[0] %></h4><h4><%= Vistor::IMAGE_LABELS[0] %></h4>RailsBootstrap::Application.routes.draw do
+  resources :visitors, only: [:new, :create]
+  root :to => 'visitors#new'
+end
